@@ -17,7 +17,7 @@ function getPlayerChoice() {
 }
 
 function getComputerChoice() {
-    let computerEntry = Math.floor(Math.random() * 3);
+    let randomNumber = Math.floor(Math.random() * 3);
     if (randomNumber === 0) {
         console.log("Computer chose rock");
     } else if (randomNumber === 1) {
@@ -26,7 +26,5 @@ function getComputerChoice() {
         console.log("Computer Chose scissors");
     }
 }
-
-function playRound(userEntry, computerEntry) {}
 getPlayerChoice();
 getComputerChoice();
