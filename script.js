@@ -2,7 +2,8 @@ let humanScore = 0;
 let computerScore = 0;
 
 function getPlayerChoice() {
-    let userEntry = parseInt(
+    let userEntry;
+    userEntry = parseInt(
         prompt(`Enter number amongst 1(Rock), 2(Paper), 3(Scissor) `),
     );
     if (userEntry === 1) {
@@ -17,7 +18,8 @@ function getPlayerChoice() {
 }
 
 function getComputerChoice() {
-    let randomNumber = Math.floor(Math.random() * 3);
+    let randomNumber;
+    randomNumber = Math.floor(Math.random() * 3);
     if (randomNumber === 0) {
         console.log("Computer chose rock");
     } else if (randomNumber === 1) {
@@ -26,5 +28,6 @@ function getComputerChoice() {
         console.log("Computer Chose scissors");
     }
 }
+
 getPlayerChoice();
 getComputerChoice();
